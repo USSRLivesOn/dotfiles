@@ -5,6 +5,9 @@
 [core]
   autocrlf = input
 
+[credential]
+  helper = osxkeychain
+
 [color]
   branch = auto
   diff = auto
@@ -26,4 +29,3 @@
   changed = green
   untracked = cyan
 [credential]
-	helper = osxkeychain

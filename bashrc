@@ -1,4 +1,4 @@
-PATH=$PATH:~/.bin
+PATH=/usr/local/bin:$PATH
 export PATH
 
 export PS1="[\A \w \$] "
