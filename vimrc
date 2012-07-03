@@ -1,7 +1,13 @@
+" General
+set directory=~/.vimtmp         " Put tmp files to their own folder
+set nocompatible                " Disable vi-compatibility
+set encoding=utf-8              " Necessary to show unicode glyphs in Powerline
+" set laststatus=2                " Always show the statusline
+
 " UI
 syntax on                       " Turn on syntax highlighting
 colorscheme molokai             " Color scheme
-set number                      " Turn on line numbers 
+"set number                      " Turn on line numbers 
 set cul                         " Highlight current line
 set showcmd                     " Show (partial) command in status line
 set showmatch                   " Show matching brackets
@@ -22,5 +28,10 @@ set wildmode=list:longest,full  " Command <Tab> completion, list matches, then l
 set incsearch                   " Incremental search
 set ignorecase                  " Case insensitive search
 
+" Non-plugin-specific keymap
 inoremap jj <Esc>
 nnoremap ; :
+
+" Plugin options
+call pathogen#infect()
+nmap [[ :TagbarOpen fj<CR>

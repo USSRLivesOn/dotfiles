@@ -9,6 +9,7 @@ export PIP_VIRTUALENV_BASE=$WORKON_HOME
 export PIP_RESPECT_VIRTUALENV=true
 source /usr/local/bin/virtualenvwrapper.sh
 
-export PS1="[\A \w \$] "
+export CLICOLOR=1
+export PS1="\e[0;32m[\A \w \$]\e[m "
 
 alias ls='ls -lAG'
