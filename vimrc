@@ -36,6 +36,7 @@ nnoremap ; :
 
 " Plugin options
 call pathogen#infect()
+call pathogen#helptags()
 nmap [[ :TagbarOpen fj<CR>
 let g:ctrlp_cache_dir = $HOME.'/.vimtmp'
 let g:Powerline_cache_file = $HOME.'/.vimtmp/Powerline.cache'
