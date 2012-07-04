@@ -12,4 +12,4 @@ source /usr/local/bin/virtualenvwrapper.sh
 export CLICOLOR=1
 export PS1="\e[0;32m[\A \w \$]\e[m "
 
-alias ls='ls -lAG'
+alias ls='ls -lhAG'
