@@ -11,6 +11,7 @@ colorscheme molokai             " Color scheme
 set cul                         " Highlight current line
 set showcmd                     " Show (partial) command in status line
 set showmatch                   " Show matching brackets
+set colorcolumn=120
 
 " Tabs and indents
 set autoindent                  " Indent at same level as previous line
@@ -25,6 +26,7 @@ set preserveindent              " Save as much indent structure as possible
 
 set wildmenu                    " Show autocomplete list
 set wildmode=list:longest,full  " Command <Tab> completion, list matches, then longest common part, then all
+set wildignore+=*.pyc           " Ignore .pyc
 set incsearch                   " Incremental search
 set ignorecase                  " Case insensitive search
 
@@ -35,3 +37,5 @@ nnoremap ; :
 " Plugin options
 call pathogen#infect()
 nmap [[ :TagbarOpen fj<CR>
+let g:ctrlp_cache_dir = $HOME.'/.vimtmp'
+let g:Powerline_cache_file = $HOME.'/.vimtmp/Powerline.cache'
