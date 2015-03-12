@@ -9,18 +9,16 @@
   helper = osxkeychain
 
 [color]
-  branch = auto
-  diff = auto
-  status = auto
+  ui = auto
 
 [color "branch"]
-  current = yellow reverse
+  current = red
   local = yellow
   remote = green
 
 [color "diff"]
-  meta = yellow bold
-  frag = magenta bold
+  meta = cyan
+  frag = magenta
   old = red bold
   new = green bold
 
@@ -28,3 +26,6 @@
   added = yellow
   changed = green
   untracked = cyan
+
+[diff]
+  algorithm = patience
