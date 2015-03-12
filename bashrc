@@ -14,6 +14,8 @@ source /usr/local/bin/virtualenvwrapper.sh
 export CLICOLOR=1
 export PS1="\e[0;32m[\w \$]\e[m "
 
+export PYTHONDONTWRITEBYTECODE=1
+
 alias ls='ls -lhAG'
 
 ### Added by the Heroku Toolbelt
