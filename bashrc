@@ -1,4 +1,6 @@
-PATH=/usr/local/bin:/Applications/Postgres.app/Contents/MacOS/bin:$PATH:$HOME/.rvm/bin 
+PATH="/usr/local/bin:$PATH"
+PATH="/Users/ussrliveson/Library/Python/2.7/bin:$PATH"
+PATH="$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin"
 export PATH
 
 # virtualenvwrapper
@@ -14,6 +16,5 @@ export PS1="\e[0;32m[\w \$]\e[m "
 
 alias ls='ls -lhAG'
 
-source $HOME/.python_env
-source $HOME/.ruby_env
-source $HOME/.aws_env
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
